@@ -191,10 +191,15 @@
   margin-bottom: 30px;
 }
 
+.starter>p{
+  padding: 10px;
+}
+
 .starter > * {
   max-width: 500px;
   text-align: center;
 }
+
 
 .home-fleet > .fleet-show {
   display: flex;
@@ -452,6 +457,6 @@
     color: transparent;
   }
   .home-fleet > .fleet-show > div {
-    width: 250px;
+    width: 80%;
   }
 }

@@ -8,6 +8,8 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+/* #0b4c32 */
+
 /* font import */
 
 @font-face {
@@ -57,7 +59,8 @@ body {
 .tit {
   font-family: navbarFont;
   font-weight: bolder;
-  font-style: normal;
+  font-style: italic;
+  font-size: 14px;
 }
 
 /* Navbar */
@@ -116,7 +119,7 @@ body {
 }
 
 .navbar > .nav-links a:hover {
-  color: #212e47;
+  color: #0b4c32;
 }
 
 .navbar > .nav-btns {
@@ -127,13 +130,13 @@ body {
 }
 
 .navbar > .nav-btns > svg {
-  fill: #212e47;
+  fill: #0b4c32;
   width: 20px;
   cursor: pointer;
 }
 
 .navbar > .nav-btns > button {
-  background-color: #212e47;
+  background-color: #0b4c32;
   color: white;
   padding: 7px 10px;
   border-radius: 15px;
@@ -148,7 +151,7 @@ body {
   margin-top: 10px;
   width: 15px;
   height: auto;
-  fill: #212e47;
+  fill: #0b4c32;
 }
 
 /* Dropdown */
@@ -166,7 +169,7 @@ body {
 }
 
 .nav-links .dropdown-toggle:hover > span > svg {
-  fill: #212e47;
+  fill: #0b4c32;
 }
 
 .dropdown {
@@ -191,7 +194,7 @@ body {
 
   margin-bottom: 10px;
   text-decoration: none;
-  color: #212e47;
+  color: black;
   padding: 5px 10px;
   transition: all 0.3s;
 }
@@ -214,7 +217,7 @@ body {
   justify-content: start;
   white-space: wrap;
   position: static;
-  background-color: #212e47;
+  background-color: #0b4c32;
   padding: 5px 0;
   transition: max-height 0.3s ease, opacity 0.3s ease;
   overflow: hidden;
@@ -251,7 +254,7 @@ body {
   height: auto;
   top: 0;
   right: -200%;
-  background-color: #212e47;
+  background-color: #0b4c32;
   color: white;
   padding: 20px;
   z-index: 999 !important;
@@ -277,9 +280,9 @@ body {
 
 /* Footer */
 
-.footer {
+.footer-cont {
   width: 100%;
-  background-color: #212e47;
+  background-color: #0b4c32;
   padding: 10px 5%;
   display: flex;
   align-items: center;
@@ -287,26 +290,46 @@ body {
   flex-wrap: wrap;
 }
 
-.footer > .logo > .logo-cont {
+
+.footer>.powered{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b4c32;
+  font-size: small;
+  padding: 10px;
+  color: white;
+  font-weight: bolder;
+  gap: 5px;
+}
+
+.footer>.powered>a{
+  color: #cf3325;
+  text-decoration: none;
+}
+
+
+.footer-cont > .logo > .logo-cont {
   border-radius: 10px;
   width: fit-content;
   background-color: white;
   margin-bottom: 20px;
 }
 
-.footer > .logo img {
+.footer-cont > .logo img {
   width: 70px;
   height: auto;
 }
 
-.footer > .logo > .soc-icons {
+.footer-cont > .logo > .soc-icons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
 }
 
-.footer > .logo > .soc-icons > svg {
+.footer-cont > .logo > .soc-icons > svg {
   width: 20px;
   cursor: pointer;
   height: auto;
@@ -314,19 +337,19 @@ body {
   transition: all ease 0.7s;
 }
 
-.footer > .logo > .soc-icons > svg:hover {
+.footer-cont > .logo > .soc-icons > svg:hover {
   scale: 1.2;
 }
 
-.footer p {
+.footer-cont p {
   color: white;
 }
 
-.footer > .text {
+.footer-cont > .text {
   max-width: 400px;
 }
 
-.footer > .news-letter {
+.footer-cont > .news-letter {
   width: 300px;
   padding: 20px;
   height: 50px;
@@ -338,14 +361,14 @@ body {
   background-color: white;
 }
 
-.footer > .news-letter > input {
+.footer-cont > .news-letter > input {
   flex: 2;
   height: 100%;
   padding: 10px;
   width: 100%;
 }
 
-.footer > .news-letter > button {
+.footer-cont > .news-letter > button {
   flex: 1;
   height: 30px;
   background-color: #cf3325;
@@ -423,12 +446,16 @@ body {
 }
 
 @media (max-width: 500px) {
-  .footer > .news-letter {
+  .footer-cont > .news-letter {
     border-radius: 0;
   }
 }
 
 @media (max-width: 620px) {
+
+  .tit {
+    font-size: 10px;
+  }
   .sidebar {
     display: flex;
   }
@@ -467,25 +494,25 @@ body {
 }
 
 @media (max-width: 930px) {
-  .footer {
+  .footer-cont {
     padding: 10px;
   }
 }
 
 @media (max-width: 850px) {
-  .footer {
+  .footer-cont {
     flex-direction: column !important;
     align-items: start;
     justify-content: center;
     gap: 30px;
   }
-  .footer > .logo {
+  .footer-cont > .logo {
     order: 1;
   }
-  .footer > .news-letter {
+  .footer-cont > .news-letter {
     order: 2;
   }
-  .footer > .text {
+  .footer-cont > .text {
     order: 3;
   }
 }
