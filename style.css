@@ -453,6 +453,11 @@ body {
 
 @media (max-width: 620px) {
 
+  .preloader-image {
+    width: 200px;
+    height: auto; 
+  }
+
   .tit {
     font-size: 10px;
   }

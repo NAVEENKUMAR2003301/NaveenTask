@@ -358,9 +358,6 @@
 /* Media Queries */
 
 @media (max-width: 500px) {
-  #preload {
-    background-size: 30%;
-  }
 
   .navbar > .header {
     max-width: 70px;
